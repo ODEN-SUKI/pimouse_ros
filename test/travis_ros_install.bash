@@ -2,10 +2,6 @@
 
 #required packages
 
-sudo pip install -U pip
-pip install markdown
-pip install Cheetah==2.4.4
-pip install markdown
 pip install catkin_pkg
 pip install empy
 pip install pyyaml
