@@ -12,7 +12,7 @@ if __name__ == '__main__':
       try:
           with open(devfile,'r') as f:
               data = f.readline().split()
-              data = [  init(e) for e in data ]
+              data = [  int(e) for e in data ]
               d - LightSensorValues()
               d.right_forward = data[0]
               d.right_side = data[1]
