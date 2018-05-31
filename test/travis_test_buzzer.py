@@ -28,9 +28,8 @@ class BuzzerTest(unittest.TestCase):
 			data = f.readline()
 			self.assertEqual(data, "1234\n", "value does not written to rtbuzzer0")
 			
-	    def test_music(self):
-        ### skip this test because a problem of this test code ###
-        return
+	  def test_music(self):
+               return
         goal = MusicGoal()
         goal.freqs = [100, 200, 300, 0]
         goal.durations = [2,2,2,2]
@@ -43,7 +42,7 @@ class BuzzerTest(unittest.TestCase):
         self.assertEqual(goal.freqs,self.device_values,"invalid feedback:"
                 + ",".join([str(e) for e in self.device_values]))
 
-        ###preemption###
+        
         self.device_values = []
         self.client.send_goal(goal,feedback_cb=self.feedback_cb)
         self.client.wait_for_result(rospy.Duration.from_sec(0.5))
