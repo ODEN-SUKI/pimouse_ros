@@ -9,7 +9,7 @@ from std_msgs.msg import UInt16
 
 class BuzzerTest(unittest.TestCase):
 	
-	def setUp(self):                                #setUpメソッドを追加する
+	def setUp(self):
                self.client = actionlib.SimpleActionClient("music", MusicAction)
                self.device_values = []
 	
