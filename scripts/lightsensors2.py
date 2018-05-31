@@ -21,7 +21,7 @@ if __name__ == '__main__':
               d.sum_all = sum(data)
               d.sum_forward = data[0] + data[3]
               pub.publish(d)
-          except IOError:
+      except IOError:
               rospy.logerr("canot write to " + devfile)
               
           rate.sleep()
