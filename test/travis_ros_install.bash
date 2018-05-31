@@ -2,11 +2,11 @@
 
 #required packages
 
-pip install urllin3[secure]
-pip install catkin_pkg
-pip install empy
-pip install pyyaml
-pip install rospkg
+#pip install urllin3[secure]
+#pip install catkin_pkg
+#pip install empy
+#pip install pyyaml
+#pip install rospkg
 
 #ros install
 cd ..
