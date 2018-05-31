@@ -24,5 +24,5 @@ if __name__ == '__main__':
       except IOError:
               rospy.logerr("canot write to " + devfile)
               
-          rate.sleep()
+      rate.sleep()
           
