@@ -4,14 +4,12 @@ import rosnode
 import time
 
 from std_msgs.msg import UInt16
-from raspimouse_ros_2.msg import MusicAction, MusicResult, MusicFeedback, MusicGoal
 
 
 
 class BuzzerTest(unittest.TestCase):
 	
 	def setUp(self):
-               self.client = actionlib.SimpleActionClient("music", MusicAction)
                self.device_values = []
 	
 	def test_node_exist(self):
