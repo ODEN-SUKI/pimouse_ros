@@ -7,4 +7,4 @@ sudo chmod 666 /dev/rtlightsensor0
 echo "0" | sudo tee /dev/rtswitch{0,1,2}
 sudo chmod 666 /dev/rtswitch{0,1,2}
 
-sudo chmod 666 /pimouse_ros/travis_test_lightsensors.py
+sudo chmod 666 /pimouse_ros/test/travis_test_lightsensors.py
