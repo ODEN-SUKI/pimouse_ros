@@ -47,7 +47,3 @@ if __name__ == '__main__':
     time.sleep(3)
     rospy.init_node('travis_test_motors')
     rostest.rosrun('pimouse_ros','travis_test_motors', MotorTest)
-
-# Copyright 2016 Ryuichi Ueda
-# Released under the BSD License.
-# To make line numbers be identical with the book, this statement is written here. Don't move it to the header.
