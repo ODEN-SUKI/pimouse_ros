@@ -5,10 +5,10 @@ import rosnode, rospy
 import time
 from pimouse_ros.msg import MotorFreqs
 from geometry_msgs.msg import Twist
+from std_srvs.srv import Trigger, TriggerResponse
 
 class MotorTest(unittest.TestCase):
-
-    def setUp(self):                             
+    def setUp(self):                               
         rospy.wait_for_service('/motor_on')
         rospy.wait_for_service('/motor_off')
         on = rospy.ServiceProxy('/motor_on', Trigger)
@@ -67,8 +67,6 @@ class MotorTest(unittest.TestCase):
             data = f.readline()
             self.assertEqual(data,"1\n","wrong value in rtmotor0 at motor on")
 
-
 if __name__ == '__main__':
-    time.sleep(3)
     rospy.init_node('travis_test_motors')
     rostest.rosrun('pimouse_ros','travis_test_motors', MotorTest)
